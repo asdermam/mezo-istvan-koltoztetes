@@ -88,10 +88,11 @@
 
   /* MARQUEE */
   .marquee{background:var(--navy);color:#fff;padding:15px 0;overflow:hidden;white-space:nowrap;margin-top:40px}
-  .marquee-track{display:inline-flex;gap:38px;animation:scroll 28s linear infinite}
+  .marquee-track{display:flex;width:max-content;animation:scroll 48s linear infinite}
+  .marquee-group{display:flex;align-items:center;gap:38px;padding-right:38px;flex-shrink:0}
   .marquee span{font-family:"Sora";font-weight:700;font-size:1.1rem;display:inline-flex;align-items:center;gap:38px;opacity:.95}
   .marquee span::after{content:"→";color:var(--sun)}
-  @keyframes scroll{to{transform:translateX(-50%)}}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   section{padding:92px 0}
   .sec-head{max-width:640px;margin-bottom:50px}
@@ -275,8 +276,14 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
-    <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
+    <div class="marquee-group">
+      <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
+      <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
+    </div>
+    <div class="marquee-group">
+      <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
+      <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
+    </div>
   </div>
 </div>
 
