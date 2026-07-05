@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mező István — Költöztetés, bútorszállítás és -szerelés | Erdőkertes, a hét 7 napján</title>
+<meta name="description" content="Mező István — gyors, gondos költöztetés, bútorszállítás és bútorszerelés Erdőkertesen és környékén, a hét mind a 7 napján. Kérjen ingyenes árajánlatot!" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F6F4;
+    --paper-2:#ECEEEA;
+    --card:#FFFFFF;
+    --ink:#111726;
+    --ink-2:#3B4356;
+    --muted:#6B7385;
+    --navy:#141B2E;
+    --navy-2:#1C2740;
+    --sun:#FFD21E;
+    --sun-deep:#F2B705;
+    --line:rgba(17,23,38,.10);
+    --line-2:rgba(255,255,255,.12);
+    --shadow:0 24px 60px -30px rgba(17,23,38,.45);
+    --maxw:1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:"Sora",sans-serif;font-weight:700;line-height:1.05;letter-spacing:-.02em}
+  a{color:inherit;text-decoration:none}
+  img{display:block;width:100%;height:100%;object-fit:cover}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .mono{font-family:"DM Mono",monospace}
+  .eyebrow{font-family:"DM Mono",monospace;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:22px;height:8px;background:var(--sun);border-radius:2px}
+  .btn{display:inline-flex;align-items:center;gap:.55em;padding:.95em 1.6em;border-radius:60px;font-family:"Sora";font-weight:700;font-size:.97rem;cursor:pointer;border:0;transition:transform .22s,box-shadow .25s,background .2s,color .2s}
+  .btn-sun{background:var(--sun);color:var(--navy)}
+  .btn-sun:hover{transform:translateY(-3px);box-shadow:0 16px 30px -12px var(--sun-deep)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{transform:translateY(-3px);box-shadow:0 16px 30px -14px rgba(20,27,46,.6)}
+  .btn-ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-3px)}
+
+  /* HEADER */
+  header{position:sticky;top:0;z-index:900;transition:background .3s,box-shadow .3s}
+  header.solid{background:rgba(245,246,244,.86);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .brand{display:flex;align-items:center;gap:12px}
+  .mark{width:44px;height:44px;border-radius:13px;background:var(--navy);display:grid;place-items:center;flex:0 0 auto;position:relative;overflow:hidden}
+  .mark svg{width:24px;height:24px;stroke:var(--sun);fill:none;stroke-width:2}
+  .brand b{font-family:"Sora";font-weight:800;font-size:1.15rem;display:block;line-height:1}
+  .brand small{font-family:"DM Mono";font-size:.6rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+  nav ul{display:flex;gap:30px;list-style:none;align-items:center}
+  nav ul a{font-weight:600;font-size:.94rem;color:var(--ink-2);transition:color .2s;position:relative}
+  nav ul a::after{content:"";position:absolute;left:0;bottom:-5px;height:2px;width:0;background:var(--sun-deep);transition:width .25s}
+  nav ul a:hover{color:var(--ink)}nav ul a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px}
+  .menu-btn span{width:24px;height:2px;background:var(--ink);display:block}
+
+  /* HERO */
+  .hero{padding:56px 0 30px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+  .hero h1{font-size:clamp(2.6rem,5.8vw,4.5rem);font-weight:800;margin:22px 0 0}
+  .hero h1 .hl{position:relative;white-space:nowrap}
+  .hero h1 .hl::after{content:"";position:absolute;left:-4px;right:-4px;bottom:.06em;height:.42em;background:var(--sun);z-index:-1;border-radius:4px;transform:rotate(-1deg)}
+  .hero p.lead{font-size:1.16rem;color:var(--ink-2);max-width:33em;margin:24px 0 30px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+  .chip{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;background:var(--card);border:1px solid var(--line);padding:.55em 1em;border-radius:60px;box-shadow:0 6px 18px -14px rgba(17,23,38,.5)}
+  .chip svg{width:16px;height:16px;stroke:var(--sun-deep);fill:none;stroke-width:2.4}
+  .hero-media{position:relative}
+  .hero-photo{aspect-ratio:1/1;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(140deg,#243250,#4a6aa0)}
+  .hero-photo img{transition:transform 1.1s ease}
+  .hero:hover .hero-photo img{transform:scale(1.05)}
+  .hero-badge{position:absolute;left:-22px;top:34px;background:var(--navy);color:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px}
+  .hero-badge .d{width:44px;height:44px;border-radius:11px;background:var(--sun);display:grid;place-items:center;flex:0 0 auto}
+  .hero-badge .d b{font-family:"Sora";font-weight:800;color:var(--navy);font-size:1.15rem}
+  .hero-badge small{font-size:.72rem;color:rgba(255,255,255,.7);display:block;line-height:1.25}
+  .hero-badge strong{font-family:"Sora";font-size:.95rem}
+  .route-badge{position:absolute;right:-16px;bottom:28px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);font-family:"DM Mono";font-size:.8rem}
+  .route-badge .r{display:flex;align-items:center;gap:8px;color:var(--ink-2)}
+  .route-badge .r .dot{width:9px;height:9px;border-radius:50%;background:var(--sun-deep)}
+  .route-badge .r .dot.b{background:var(--navy)}
+  .route-badge .line{margin:6px 0 6px 4px;width:1px;height:14px;border-left:2px dashed var(--line)}
+
+  /* MARQUEE */
+  .marquee{background:var(--navy);color:#fff;padding:15px 0;overflow:hidden;white-space:nowrap;margin-top:40px}
+  .marquee-track{display:inline-flex;gap:38px;animation:scroll 28s linear infinite}
+  .marquee span{font-family:"Sora";font-weight:700;font-size:1.1rem;display:inline-flex;align-items:center;gap:38px;opacity:.95}
+  .marquee span::after{content:"→";color:var(--sun)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  section{padding:92px 0}
+  .sec-head{max-width:640px;margin-bottom:50px}
+  .sec-head h2{font-size:clamp(2rem,4vw,2.9rem);margin:14px 0 0}
+  .sec-head p{color:var(--ink-2);margin-top:15px;font-size:1.05rem}
+
+  /* SERVICES */
+  #szolgaltatasok{background:var(--paper-2)}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;gap:22px;align-items:flex-start;transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .card .ic{width:58px;height:58px;border-radius:15px;background:var(--sun);display:grid;place-items:center;flex:0 0 auto}
+  .card .ic svg{width:28px;height:28px;stroke:var(--navy);fill:none;stroke-width:2}
+  .card h3{font-size:1.3rem}
+  .card p{color:var(--ink-2);margin-top:9px;font-size:.97rem}
+  .card .idx{position:absolute;top:22px;right:26px;font-family:"DM Mono";font-size:.8rem;color:var(--line)}
+
+  /* WHY */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .why{padding:30px 26px;border-radius:20px;background:var(--card);border:1px solid var(--line);transition:transform .3s,border-color .3s}
+  .why:hover{transform:translateY(-5px);border-color:var(--sun-deep)}
+  .why .n{width:46px;height:46px;border-radius:12px;background:var(--paper-2);display:grid;place-items:center;margin-bottom:20px}
+  .why .n svg{width:22px;height:22px;stroke:var(--navy);fill:none;stroke-width:2}
+  .why h4{font-size:1.12rem}
+  .why p{color:var(--ink-2);margin-top:8px;font-size:.92rem}
+
+  /* PROCESS */
+  #folyamat{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+  #folyamat .sec-head p{color:rgba(255,255,255,.68)}
+  #folyamat .eyebrow{color:rgba(255,255,255,.8)}
+  .route{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:10px}
+  .route::before{content:"";position:absolute;top:26px;left:6%;right:6%;height:2px;background:repeating-linear-gradient(90deg,var(--sun) 0 12px,transparent 12px 24px);opacity:.5}
+  .r-step{position:relative}
+  .r-dot{width:54px;height:54px;border-radius:50%;background:var(--navy-2);border:2px solid var(--sun);display:grid;place-items:center;font-family:"Sora";font-weight:800;color:var(--sun);position:relative;z-index:2}
+  .r-step h4{font-size:1.2rem;margin:22px 0 8px}
+  .r-step p{color:rgba(255,255,255,.66);font-size:.94rem}
+
+  /* AREA */
+  .area-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .area-media{aspect-ratio:16/12;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(140deg,#243250,#4a6aa0)}
+  .area-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .area-list span{font-family:"DM Mono";font-size:.82rem;background:var(--paper-2);border:1px solid var(--line);padding:.5em 1em;border-radius:60px}
+
+  /* TESTIMONIALS */
+  #velemenyek{background:var(--paper-2)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px}
+  .quote .stars{color:var(--sun-deep);letter-spacing:2px}
+  .quote p{margin:14px 0 20px;font-size:1rem}
+  .quote .who{display:flex;align-items:center;gap:12px}
+  .quote .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--sun);display:grid;place-items:center;font-family:"Sora";font-weight:800}
+  .quote .who b{font-size:.95rem}
+  .quote .who small{display:block;color:var(--muted);font-size:.8rem}
+
+  /* CONTACT */
+  #kapcsolat{padding-bottom:100px}
+  .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px}
+  .contact-info h2{font-size:clamp(2rem,4vw,2.9rem);margin:14px 0 18px}
+  .contact-info>p{color:var(--ink-2);max-width:34em;margin-bottom:30px}
+  .cinfo{display:grid;gap:2px}
+  .cinfo a,.cinfo div.ci{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+  .cinfo a:last-child,.cinfo div.ci:last-child{border-bottom:0}
+  .ci-ic{width:46px;height:46px;border-radius:12px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;flex:0 0 auto}
+  .ci-ic svg{width:20px;height:20px;stroke:var(--sun-deep);fill:none;stroke-width:2}
+  .cinfo small{display:block;color:var(--muted);font-size:.74rem;font-family:"DM Mono";letter-spacing:.06em;text-transform:uppercase}
+  .cinfo b{font-weight:700;font-size:1.04rem}
+  form{background:var(--navy);color:#fff;border-radius:24px;padding:36px;box-shadow:var(--shadow)}
+  form h3{font-size:1.45rem;margin-bottom:6px}
+  form .sub{color:rgba(255,255,255,.66);font-size:.92rem;margin-bottom:22px}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.78rem;font-weight:600;margin-bottom:7px;color:rgba(255,255,255,.8)}
+  .field input,.field textarea{width:100%;padding:.85em 1em;border:1.5px solid var(--line-2);border-radius:12px;font-family:inherit;font-size:.95rem;background:var(--navy-2);color:#fff;transition:border-color .2s,box-shadow .2s}
+  .field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.4)}
+  .field input:focus,.field textarea:focus{outline:0;border-color:var(--sun);box-shadow:0 0 0 3px rgba(255,210,30,.22)}
+  form .btn-sun{width:100%;justify-content:center;margin-top:6px}
+  form .note{font-size:.76rem;color:rgba(255,255,255,.5);text-align:center;margin-top:12px}
+
+  /* FOOTER */
+  footer{background:var(--navy);color:rgba(255,255,255,.7);padding:26px 0;border-top:1px solid var(--line-2)}
+  .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center;font-size:.85rem}
+  .foot-in .brand b{color:#fff}.foot-in .brand small{color:rgba(255,255,255,.55)}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:960px){
+    .hero-grid,.area-grid,.contact-grid{grid-template-columns:1fr;gap:38px}
+    .hero-photo{aspect-ratio:16/11;max-height:400px}
+    .cards{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr 1fr}
+    .route{grid-template-columns:1fr 1fr;gap:32px}
+    .route::before{display:none}
+    .quotes{grid-template-columns:1fr}
+  }
+  @media(max-width:640px){
+    nav ul,.nav-cta .btn-ghost{display:none}
+    .menu-btn{display:flex}
+    .why-grid,.route{grid-template-columns:1fr}
+    .frow{grid-template-columns:1fr}
+    section{padding:64px 0}
+    .wrap{padding:0 20px}
+    .hero-badge{left:10px}
+  }
+  .mobile-menu{position:fixed;inset:0;z-index:1000;background:var(--navy);color:#fff;display:none;flex-direction:column;padding:40px 28px;gap:4px}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{font-family:"Sora";font-weight:700;font-size:1.8rem;padding:13px 0;border-bottom:1px solid var(--line-2);color:#fff}
+  .mobile-menu .close{align-self:flex-end;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24"><path d="M1 3h13v13H1zM14 8h4l3 3v5h-7M5.5 19a2 2 0 1 0 0-.1M17.5 19a2 2 0 1 0 0-.1"/></svg></span>
+      <span><b>Mező István</b><small>Költöztetés · Szállítás</small></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+        <li><a href="#miert">Miért mi</a></li>
+        <li><a href="#folyamat">Menete</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+36203769769" class="btn btn-ghost">06 20 376 9769</a>
+      <a href="#kapcsolat" class="btn btn-sun">Ajánlatkérés</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close" id="closeBtn" aria-label="Bezárás">×</button>
+  <a href="#szolgaltatasok">Szolgáltatások</a>
+  <a href="#miert">Miért mi</a>
+  <a href="#folyamat">Menete</a>
+  <a href="#velemenyek">Vélemények</a>
+  <a href="#kapcsolat">Kapcsolat</a>
+  <a href="tel:+36203769769" style="color:var(--sun)">06 20 376 9769</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Erdőkertes és környéke · Költöztetés</span>
+      <h1>Költözzön gondtalanul — a <span class="hl">cipelést bízza ránk.</span></h1>
+      <p class="lead">Mező István — lakás- és irodaköltöztetés, bútorszállítás és -szerelés. Gyors, precíz munka, a hét mind a 7 napján.</p>
+      <div class="hero-cta">
+        <a href="#kapcsolat" class="btn btn-navy">Kérjen ingyenes árajánlatot →</a>
+        <a href="tel:+36203769769" class="btn btn-ghost">📞 06 20 376 9769</a>
+      </div>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg> A hét 7 napján</span>
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Bútorszerelés is</span>
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg> Gyors & precíz</span>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1758523670991-ee93bc48d81d?auto=format&fit=crop&w=1100&q=80" alt="Költöztetés, dobozok szállítása" loading="eager" onerror="this.remove()">
+      </div>
+      <div class="hero-badge">
+        <span class="d"><b>7</b></span>
+        <span><small>Elérhető</small><strong>Minden nap</strong></span>
+      </div>
+      <div class="route-badge">
+        <div class="r"><span class="dot"></span> Régi otthon</div>
+        <div class="line"></div>
+        <div class="r"><span class="dot b"></span> Új otthon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
+    <span>Lakásköltöztetés</span><span>Irodaköltöztetés</span><span>Bútorszállítás</span><span>Bútorszerelés</span><span>Fuvarozás</span><span>Csomagolás</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="szolgaltatasok">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Szolgáltatások</span>
+      <h2>Mindent viszünk, ami elfér</h2>
+      <p>Egy bútordarabtól a teljes lakásig — gyorsan, gondosan és a hét minden napján.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <span class="idx">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v11H3zM9 20v-6h6v6"/></svg></div>
+        <div><h3>Lakásköltöztetés</h3><p>Teljes körű lakásköltöztetés be- és kipakolással, gondos szállítással — hogy Önnek ne kelljen cipelnie.</p></div>
+      </div>
+      <div class="card reveal">
+        <span class="idx">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7M6 20a2 2 0 1 0 0-.1M17 20a2 2 0 1 0 0-.1"/></svg></div>
+        <div><h3>Bútorszállítás</h3><p>Akár egyetlen bútordarab biztonságos szállítása A-ból B-be — gyorsan és sérülésmentesen.</p></div>
+      </div>
+      <div class="card reveal">
+        <span class="idx">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 4l6 6-9 9-6 1 1-6zM3 21h7"/></svg></div>
+        <div><h3>Bútorszerelés</h3><p>Bútorok szét- és összeszerelése a költözésnél — szekrények, ágyak, konyhabútor szakszerűen.</p></div>
+      </div>
+      <div class="card reveal">
+        <span class="idx">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 17a2 2 0 1 0 0-.1M17 17a2 2 0 1 0 0-.1M2 5h11v11M13 8h5l3 3v5h-2"/></svg></div>
+        <div><h3>Fuvarozás & egyéb</h3><p>Egyéb szállítási feladatok rugalmasan, igény szerint — a hét minden napján, előre egyeztetve.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="miert">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Miért minket válasszon</span>
+      <h2>Költözés stressz nélkül</h2>
+      <p>A cél, hogy Önnek csak annyi dolga legyen: megmondja, mit és hová.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><div class="n"><svg viewBox="0 0 24 24"><path d="M12 6v6l4 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div><h4>A hét 7 napján</h4><p>Hétvégén és ünnepnapokon is dolgozunk, amikor Önnek megfelel.</p></div>
+      <div class="why reveal"><div class="n"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div><h4>Gyors és precíz</h4><p>Pontos időben érkezünk, a munkát rutinosan, gördülékenyen végezzük.</p></div>
+      <div class="why reveal"><div class="n"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h4>Gondos bánásmód</h4><p>Bútorait és dobozait óvatosan kezeljük, hogy minden épségben érkezzen.</p></div>
+      <div class="why reveal"><div class="n"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4>Átlátható ár</h4><p>Igény szerinti, érthető ajánlat — csak azért fizet, amire valóban szüksége van.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="folyamat">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Hogyan zajlik</span>
+      <h2>A hívástól a beérkezésig</h2>
+      <p>Négy egyszerű lépés — a többit elintézzük Ön helyett.</p>
+    </div>
+    <div class="route reveal">
+      <div class="r-step"><div class="r-dot">1</div><h4>Egyeztetés</h4><p>Elmondja telefonon vagy űrlapon, mit és honnan hová szeretne költöztetni.</p></div>
+      <div class="r-step"><div class="r-dot">2</div><h4>Árajánlat</h4><p>A mennyiség és a távolság alapján gyors, átlátható árajánlatot adunk.</p></div>
+      <div class="r-step"><div class="r-dot">3</div><h4>Szállítás & szerelés</h4><p>Pakolás, fuvar, szükség esetén bútorszét- és összeszerelés — mi cipelünk.</p></div>
+      <div class="r-step"><div class="r-dot">4</div><h4>Megérkezés</h4><p>Minden a helyén, időben és épségben — Ön már be is rendezkedhet.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section id="terulet">
+  <div class="wrap area-grid">
+    <div class="area-media reveal">
+      <img src="https://images.unsplash.com/photo-1600725935160-f67ee4f6084a?auto=format&fit=crop&w=1100&q=80" alt="Költöztető dobozok" loading="lazy" onerror="this.remove()">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Hol dolgozunk</span>
+      <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin:14px 0 16px">Erdőkertes és környéke</h2>
+      <p style="color:var(--ink-2);max-width:38em">Erdőkertesről indulunk, és a környék településeit is rendszeresen kiszolgáljuk. Nagyobb távolságot is vállalunk — kérdezzen bátran!</p>
+      <div class="area-list">
+        <span>Erdőkertes</span><span>Veresegyház</span><span>Gödöllő</span><span>Őrbottyán</span><span>Vác</span><span>Budapest</span><span>Pest megye</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="velemenyek">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Vélemények</span>
+      <h2>Elégedett költözők</h2>
+    </div>
+    <div class="quotes">
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>„Vasárnap költöztünk, mégis rugalmasan jött. Gyorsan, óvatosan pakolt, semmi nem sérült. Nagyon korrekt!”</p><div class="who"><span class="av">N</span><div><b>Nagy Erika</b><small>Erdőkertes</small></div></div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>„A szekrényt szétszedte, elszállította és a helyszínen összerakta. Pontos, ügyes, ajánlom mindenkinek.”</p><div class="who"><span class="av">V</span><div><b>Varga Tamás</b><small>Veresegyház</small></div></div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p>„Egy bútordarab szállítására hívtam, másnap már meg is oldotta. Barátságos és megbízható.”</p><div class="who"><span class="av">K</span><div><b>Kiss Judit</b><small>Gödöllő</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="kapcsolat">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Kapcsolat</span>
+      <h2>Kérjen árajánlatot</h2>
+      <p>Mondja el, mit és honnan hová szeretne költöztetni — gyorsan, kötelezettség nélkül adunk árajánlatot.</p>
+      <div class="cinfo">
+        <a href="tel:+36203769769">
+          <span class="ci-ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><small>Telefon</small><b>06 20 376 9769</b></div>
+        </a>
+        <a href="mailto:istvan.mezo.1964@gmail.com">
+          <span class="ci-ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg></span>
+          <div><small>E-mail</small><b>istvan.mezo.1964@gmail.com</b></div>
+        </a>
+        <div class="ci">
+          <span class="ci-ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><small>Kiindulás</small><b>2113 Erdőkertes és környéke</b></div>
+        </div>
+        <div class="ci">
+          <span class="ci-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><small>Elérhetőség</small><b>A hét mind a 7 napján</b></div>
+        </div>
+      </div>
+    </div>
+    <form class="reveal" id="quoteForm">
+      <h3>Ingyenes árajánlat</h3>
+      <p class="sub">Töltse ki, és hamarosan keressük.</p>
+      <div class="frow">
+        <div class="field"><label for="name">Név</label><input id="name" name="name" required placeholder="Az Ön neve"></div>
+        <div class="field"><label for="phone">Telefonszám</label><input id="phone" name="phone" required placeholder="06 __ ___ ____"></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label for="from">Honnan</label><input id="from" name="from" placeholder="Pl. Erdőkertes"></div>
+        <div class="field"><label for="to">Hová</label><input id="to" name="to" placeholder="Pl. Gödöllő"></div>
+      </div>
+      <div class="field"><label for="msg">Mit szeretne költöztetni?</label><textarea id="msg" name="msg" rows="3" placeholder="Pl. 2 szobás lakás, vagy egy szekrény és egy ágy…"></textarea></div>
+      <button type="submit" class="btn btn-sun">Árajánlatot kérek →</button>
+      <p class="note">A gomb megnyitja a levelezőjét az előre kitöltött üzenettel.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-in">
+    <a href="#top" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24"><path d="M1 3h13v13H1zM14 8h4l3 3v5h-7M5.5 19a2 2 0 1 0 0-.1M17.5 19a2 2 0 1 0 0-.1"/></svg></span>
+      <span><b>Mező István</b><small>Költöztetés · Szállítás · Erdőkertes</small></span>
+    </a>
+    <span>© 2026 Mező István — Weboldal-demó, bemutató céljából</span>
+    <span class="mono" style="color:var(--sun)">06 20 376 9769</span>
+  </div>
+</footer>
+
+<script>
+  const header=document.getElementById('top');
+  const onScroll=()=>header.classList.toggle('solid',window.scrollY>20);
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  const mm=document.getElementById('mobileMenu');
+  document.getElementById('menuBtn').onclick=()=>mm.classList.add('open');
+  document.getElementById('closeBtn').onclick=()=>mm.classList.remove('open');
+  mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.remove('open'));
+
+  const io=new IntersectionObserver((es)=>{
+    es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*60);io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  document.getElementById('quoteForm').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    const n=name.value,p=phone.value,f=document.getElementById('from').value,t=document.getElementById('to').value,m=document.getElementById('msg').value;
+    const body=encodeURIComponent(`Név: ${n}\nTelefon: ${p}\nHonnan: ${f}\nHová: ${t}\n\nMit: ${m}`);
+    window.location.href=`mailto:istvan.mezo.1964@gmail.com?subject=${encodeURIComponent('Költöztetés árajánlatkérés – weboldal')}&body=${body}`;
+  });
+</script>
+</body>
+</html>
